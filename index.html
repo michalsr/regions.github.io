@@ -246,8 +246,8 @@
             <img src="./static/images/method.png" alt="Description of the image",class="center-margin">
             <p> Our approach is to pool image features over generated regions to create one feature vector per region, and to make predictions based on these region representations. The main steps are 
               <ol>
-                <li>Extract image features. We used strong representation models like CLIP, DINOv1, DINOv2 and MaskCLIP. We found that <b>DINOv2</b> worked best</li>
-                <li>Generate regions with a class-agnostic segmenter like <a href="https://ai.meta.com/research/publications/segment-anything/">SAM</a>
+                <li>Extract image features. We used strong representation models like CLIP, DINOv1, DINOv2 and MaskCLIP. We found that <b>DINOv2</b> worked best.</li>
+                <li>Generate regions with a class-agnostic segmenter like <a href="https://ai.meta.com/research/publications/segment-anything/">SAM.</a>
                 <li>To combine the image features and generated regions, we <b>upsample</b> the extracted features and superimpose the features and regions. Then we perform <b>average</b> pooling to create the feature vectors.</li>
               </ol>
             </p>
@@ -304,8 +304,6 @@
   <div class="columns is-centered has-text-centered">
     <div class="column is-full-width">
       <h1 class="title is-2">Applications</h1>
-      <br>
-      <br>
       <h2 class="title is-3">Semantic Segmentation</h2>
       <p>For semantic segmentation, we classified each region. For pixels belonging to multiple regions, we averaged the confidence. Our results outperformed corresponding patch-based models across different images features. As seen in the qualitative results, with region-based models, pixels within the same object have much more consistent classifications compared to patch-based models.</p>
       <div class="grid-container">
@@ -377,6 +375,8 @@
         <div class="grid-item-2"><img src="./static/images/object_retrieval/train_heatmap.jpg" alt="Image 4"></div>
         <!-- Add more images as needed -->
     </div>
+    <br>
+    <br>
     <h2 class="title is-3">Activity Classification</h2>
       <p>The last application is multi-frame activity classification. Similar to multi-view segmentation, we train a transformer on top of per-frame region features.</p>
       <img src="./static/images/activity_classification.jpg" alt="Description of the image",class="center-margin">
@@ -395,6 +395,20 @@
   }</code></pre>
   </div>
 </section>
+
+<section>
+
+   
+
+
+
+          <p>Website is based on template from <a href="https://nerfies.github.io/">Nerfies</a> </p>
+       
+
+
+
+</section>
+
 
 <!-- <section class="hero teaser">
   <div class="container is-max-desktop">
