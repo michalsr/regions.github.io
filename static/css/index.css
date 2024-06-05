@@ -3,6 +3,15 @@ body {
 }
 
 
+  .center-margin {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 450px;
+      /* max-width: 100%; Ensure the image is responsive */
+      height: auto;
+  }
+
 .footer .icon-link {
     font-size: 25px;
     color: #000;
@@ -154,4 +163,52 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minmax values as needed */
+  gap: 20px; /* space between images */
+}
+figure {
+  margin: 0;
+  text-align: center;
+}
+figure img {
+  max-width: 100%; /* ensure images are responsive */
+  height: auto;
+}
+figcaption {
+  margin-top: 10px; /* space between image and description */
+  font-size: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-header {
+  font-weight: bold;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.grid-item-2 img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
