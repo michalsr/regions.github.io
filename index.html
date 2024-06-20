@@ -275,7 +275,7 @@
             <figcaption><b>SAM+SLIC</b></figcaption>
           </figure>
       </div>
-      <p>SAM generated regions tended to leave many pixels uncovered. To improve coverage, we ran the superpixel clustering algortihm SLIC and took the intersection of SLIC and unmasked pixels. SAM+SLIC outperformed other SAM and other SAM variants such as MobileSAM and HQ-SAM. </p>
+      <p>SAM generated regions tended to leave many pixels uncovered. To improve coverage, we ran the superpixel clustering algortihm SLIC and took the intersection of SLIC and unmasked pixels. SAM+SLIC outperformed SAM and other SAM variants such as MobileSAM and HQ-SAM. </p>
     
     <div class="grid-container">
       <div class="grid-header">SAM Only</div>
@@ -336,7 +336,7 @@
     <br>
     <br>
     <h2 class="title is-3">Multi-View Semantic Segmentation</h2>
-      <p>For multi-view segmentation, we trained a scene transformer on top of regions from <b>ALL</b> images in a scene. Such a transformer would require 100,000 patches but only 5,000 for scenes with an average of 100 frames/scene. Predictions from our models were generally better than the noisy ground truth.</p>
+      <p>For multi-view segmentation, we trained a scene transformer on top of regions from <b>ALL</b> images in a scene. Such a transformer would require 100,000 patches but only 5,000 regions for scenes with an average of 100 frames/scene. Predictions from our models were generally better than the noisy ground truth.</p>
       <div class="grid-container">
         <div class="grid-header">Original</div>
         <div class="grid-header">Linear Probe</div>
@@ -363,7 +363,7 @@
     <br>
     <br>
     <h2 class="title is-3">One-Shot Object Retrieval</h2>
-      <p>We introduce a new task called object retrieval where the goal is to find all instances of an object in an image colection.  We compare object queries to individual regions from an image. In the examples below, the third column shows the similarity between the highlighted object in the first column and the database image.</p>
+      <p>We introduce a new task called object retrieval where the goal is to find all instances of an object in an image collection.  We compare object queries to individual regions from an image. In the examples below, the third column shows the similarity between the highlighted object in the first column and the database image.</p>
       <div class="grid-container-2">
         <div class="grid-header">Query Image</div>
         <div class="grid-header">Database Image</div>
